@@ -11,7 +11,53 @@ class Car:
         print(f"{self.brand} {self.model} ({self.year}) заводится.")
 
 class Garage:
-    def __init__(self):
+    def __init__(self):# Убедитесь что вы в правильной директории с файлом main.py
+    # Создаем .gitignore
+    echo "__pycache__/" > .gitignore
+    echo "*.pyc" >> .gitignore
+    echo ".idea/" >> .gitignore
+    echo "venv/" >> .gitignore
+
+    # Создаем README.md
+    echo "# Система управления гаражом" > README.md
+    echo "" >> README.md
+    echo "Проект на Python для управления автомобилями в гараже." >> README.md
+    echo "" >> README.md
+    echo "## Функционал" >> README.md
+    echo "- Добавление автомобилей" >> README.md
+    echo "- Просмотр списка автомобилей" >> README.md
+    echo "- Удаление автомобилей" >> README.md
+
+    # Инициализируем Git и добавляем файлы
+    git init
+    git add main.py .gitignore README.md
+    git commit -m "Первоначальная версия проекта"
+    git branch -M master
+    git remote add origin https://github.com/ViltrumiteWarrior/random-project-in-lesson.git
+    git push -u origin master# Убедитесь что вы в правильной директории с файлом main.py
+    # Создаем .gitignore
+    echo "__pycache__/" > .gitignore
+    echo "*.pyc" >> .gitignore
+    echo ".idea/" >> .gitignore
+    echo "venv/" >> .gitignore
+
+    # Создаем README.md
+    echo "# Система управления гаражом" > README.md
+    echo "" >> README.md
+    echo "Проект на Python для управления автомобилями в гараже." >> README.md
+    echo "" >> README.md
+    echo "## Функционал" >> README.md
+    echo "- Добавление автомобилей" >> README.md
+    echo "- Просмотр списка автомобилей" >> README.md
+    echo "- Удаление автомобилей" >> README.md
+
+    # Инициализируем Git и добавляем файлы
+    git init
+    git add main.py .gitignore README.md
+    git commit -m "Первоначальная версия проекта"
+    git branch -M master
+    git remote add origin https://github.com/ViltrumiteWarrior/random-project-in-lesson.git
+    git push -u origin master
         self.cars = []
 
     def add_car(self, car):
